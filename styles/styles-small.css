@@ -1,0 +1,96 @@
+@media (max-width: 768px) {
+
+    header {
+        display: contents;
+    }
+    
+    
+    #hamburger-menu {
+        display: grid;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: var(--nav-background-color);
+        color: var(--text-color);
+        justify-content: right;
+    }
+    
+    #hamburger-menu::before {
+        content: '≡';
+    }
+    
+    .navigation{
+        flex-flow: column;
+    }
+
+    nav{
+        grid-column: 1 / span 2;
+        grid-row: span 2;
+    }
+    
+    .nav {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        grid-column:  2;
+        grid-row: span 2;
+        justify-content: right;
+        background-color: var(--nav-background-color);
+        
+    }
+    
+    .nav li {
+        display: none;
+    }
+    
+    .nav a {
+        display: block;
+        padding: .75rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 700;
+        transition: .5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    nav a:hover {
+        text-decoration: underline double;
+        
+    }
+    
+    nav li:hover {
+        color: var(--title-color);
+        background-color: var(--nav-hover-background-color);
+    }
+    
+    .show li {
+        display: block;
+        
+    }
+    
+    #hamburger-menu.show::before {
+        content: 'X';
+    }
+
+
+    main{
+        grid-template-columns: auto;
+    }
+    /* cards styles */
+
+
+    #card1,
+    #card2,
+    #card3 {
+        grid-column: 1 / 4;
+        margin: 1rem;
+    }
+
+    #courses {
+        grid-template-columns:auto;
+    }
+}
