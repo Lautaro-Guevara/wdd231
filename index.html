@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - Lautaro Guevara</title>
 
-    <meta name="description" content="...">
+    <meta name="description" content="Main page of the wdd231 course belonging to the student Lautaro Guevara.">
     <meta name="author" content="Lautaro Guevara">
 
     <link rel="stylesheet" href="styles/normalice.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
     <script src="scripts/scripts.js" defer></script>
 </head>
@@ -18,9 +23,12 @@
         <div id="picture-name">
             <img src="images/profile_picture.jpg" alt="lautaro-guevara-profile-picture">
             <h1>Lautaro F. Guevara</h1>
+            
         </div>
-        <nav>
-            <ul class="navigation">
+        
+        <nav class="nav">
+            <button id="hamburger-menu" class="hamburger"></button>
+            <ul class="navigation" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="https://github.com/Lautaro-Guevara?tab=overview&from=2024-09-01&to=2024-09-18">GitHub Profile</a></li>
@@ -34,7 +42,7 @@
             <div class="card-title">
                 <h2>Course Work</h2>
             </div>
-            <div>
+            <div id="course-work">
                 <ul>
                     <li></li>
                     <li></li>
@@ -47,8 +55,10 @@
                 <h2>Comodoro Rivadavia, Argentina</h2>
             </div>
             <div>
-                <img src="" alt="">
-                <legend>Chenque Hill</legend>
+                <figure>
+                    <img src="https://enestosdias.com.ar/thumbs/1000%C3%971000%C3%97max/cerro-chenque-2.jpg" alt="">
+                    <figcaption>Chenque Hill</figcaption>
+                </figure>
             </div>
         </section>
         <section class="card" id="card3">
@@ -56,15 +66,16 @@
                 <h2>Web and Computer Programing Certificate</h2>
             </div>
             <div>
-                <div>
-                    <button type="button">All</button>
-                    <button type="button">CSE</button>
-                    <button type="button">WDD</button>
+                <div id="filter-buttons">
+                    <button onclick="renderCourses('All')">All</button>
+                    <button onclick="renderCourses('CSE')">CSE</button>
+                    <button onclick="renderCourses('WDD')">WDD</button>
                 </div>
                 <div id="courses">
                     <div>
                         <h3><a href=""></a></h3>
                     </div>
+                    <div id="total-credits"></div>
                 </div>
             </div>
         </section>

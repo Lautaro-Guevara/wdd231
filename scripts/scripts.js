@@ -4,6 +4,17 @@ const today = new Date();
 
 currentyear.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
+lastModified.innerHTML = `Last modification: <span class="highlight">${document.lastModified}</span>`;
+
+const mainnav = document.querySelector('.nav')
+const hambutton = document.querySelector('#hamburger-menu');
+
+
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});
+
 
 const courses = [
     {
@@ -16,7 +27,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -29,7 +40,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -41,7 +52,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -67,7 +78,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -81,23 +92,67 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
 
-lastModified.innerHTML = `Last modification: <span class="highlight">${document.lastModified}</span>`;
 
- document.addEventListener("DOMContentLoaded", function(){
-    const divCourses = document.getElementById("courses")
-    divCourses.innerHTML = "";
 
-    courses.forEach(course =>{
-        const couresBlock = document.createElement("div #course-card")
+function renderCourses(filter = 'All') {
+    const divCourses = document.getElementById("courses");
+    divCourses.innerHTML = ""; // Limpiar contenido previo
 
-        couresBlock.innerHTML = `
-        
-        `
+    const filteredCourses = filter === 'All' 
+        ? courses 
+        : courses.filter(course => course.subject === filter);
 
-    })
-    
- })
+    filteredCourses.forEach(course => {
+        const courseBlock = document.createElement("div");
+        courseBlock.className = `course-card ${course.completed ? 'completed' : 'not-completed'}`;
+
+        courseBlock.innerHTML = `
+            <button class="open-button" data-index="${course.number}">
+                ${course.subject} ${course.number}
+            </button>
+
+            <div class="modal-container" id="modal-container-${course.number}">
+                <div class="modal">
+                    <span class="close" data-index="${course.number}">&times;</span>
+                    <h1>${course.title}</h1>
+                    <p>${course.description}</p>
+                </div>
+            </div>
+        `;
+
+        divCourses.appendChild(courseBlock);
+    });
+
+    // Funcionalidad para abrir y cerrar los modales
+    document.querySelectorAll(".open-button").forEach(button => {
+        button.addEventListener("click", function () {
+            const index = button.getAttribute("data-index");
+            const modal = document.getElementById(`modal-container-${index}`);
+            modal.style.display = "block";
+        });
+    });
+
+    document.querySelectorAll(".close").forEach(closeButton => {
+        closeButton.addEventListener("click", function () {
+            const index = closeButton.getAttribute("data-index");
+            const modal = document.getElementById(`modal-container-${index}`);
+            modal.style.display = "none";
+        });
+    });
+}
+
+
+renderCourses();
+
+function displayTotalCredits() {
+    const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
+    const creditsContainer = document.getElementById("total-credits");
+    creditsContainer.innerHTML = `Total Credits Required: ${totalCredits}`;
+}
+
+
+displayTotalCredits();
