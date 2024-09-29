@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Comodoro Rivadavia Chamber of Commerce</title>
 
     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/last-update.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo-placeholder.png" alt="Comodoro Rivadavia Chamber of Commerce Logo">
+                <img src="images/favicon.png" alt="Comodoro Rivadavia Chamber of Commerce Logo">
                 <h1>Comodoro Rivadavia Chamber of Commerce</h1>
             </div>
             <nav>
@@ -28,7 +30,7 @@
     </header>
 
     <section class="hero">
-        <img src="hero-placeholder.png" alt="Scalable, responsive hero image">
+        <img src="images/hero-image.png" alt="Scalable, responsive hero image" width="1200px">
         <button class="hero-button">Keynote Tickets</button>
     </section>
 
@@ -63,14 +65,14 @@
                 <button id="list-view">List View</button>
             </div>
             <div id="members-container" class="grid"></div>
-            
         </div>
+        
     </main>
 
     <footer>
         <address>
             <p>Comodoro Rivadavia Chamber of Commerce</p>
-            <p>10 Rue De La Paix, Comodoro Rivadavia, Mali 999</p>
+            <p>555 Av. San Martin, Comodoro Rivadavia, Argentina</p>
             <p>Email: info@Comodoro Rivadaviacc.org</p>
             <p>Phone: (297) 555-2300</p>
         </address>
@@ -79,7 +81,10 @@
             <a href="#"><img src="twitter-placeholder.png" alt="Twitter"></a>
             <a href="#"><img src="linkedin-placeholder.png" alt="LinkedIn"></a>
         </div>
-        <p>&copy; 20xx Comodoro Rivadavia Chamber of Commerce</p>
+        <p>WDD231 Class Project</p>
+        <p> Lautaro Guevara</p>
+        <p>©<span id="currentyear"></span> Comodoro Rivadavia Chamber of Commerce</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

@@ -2,7 +2,10 @@
 async function fetchMembers() {
     const response = await fetch('./data/members.json');
     const members = await response.json();
-    displayMembers(members, 'grid');
+    displayMembers(members, 'grid'); // Default view is 'grid'
+    
+    // Store members data globally for reuse
+    window.membersData = members;
 }
 
 // Function to display members in a grid or list view
@@ -40,16 +43,28 @@ function getMembershipLevel(level) {
 
 // Function to toggle view
 function toggleView(view) {
+    // Remove 'active-view' class from the currently active button
     const currentView = document.querySelector('.active-view');
     if (currentView) currentView.classList.remove('active-view');
-    
-    document.getElementById(view).classList.add('active-view');
-    fetchMembers().then(() => displayMembers(view));
+
+    // Add 'active-view' class to the clicked button
+    const newViewButton = document.getElementById(view + '-view');
+    if (newViewButton) newViewButton.classList.add('active-view');
+
+    // Change the layout of the members container based on the selected view
+    const container = document.getElementById('members-container');
+    container.className = view; // Set the class to 'grid' or 'list'
 }
 
 // Initialize fetch
 fetchMembers();
 
 // Event listeners for toggling between grid and list view
-document.getElementById('grid-view').addEventListener('click', () => toggleView('grid'));
-document.getElementById('list-view').addEventListener('click', () => toggleView('list'));
+document.getElementById('grid-view').addEventListener('click', () => {
+    toggleView('grid');
+    displayMembers(window.membersData, 'grid');
+});
+document.getElementById('list-view').addEventListener('click', () => {
+    toggleView('list');
+    displayMembers(window.membersData, 'list');
+});
