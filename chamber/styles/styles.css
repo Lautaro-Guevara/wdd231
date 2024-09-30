@@ -1,7 +1,7 @@
 /* Define color variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --primary-color: #0e629b;
+    --secondary-color: #219c54;
     --background-color: #ecf0f1;
     --text-color: #333;
     --font-family: Arial, sans-serif;
@@ -34,11 +34,6 @@ header {
     padding: 1rem;
     color: #fff;
 }
-
-.logo img {
-    
-}
-
 
 
 nav ul {
@@ -86,6 +81,11 @@ nav ul li a {
 
 
 /* Info grid section (Events, Current Weather and Weather Forecast) styles */
+
+h2{
+    display: flex;
+    justify-content: center;
+}
 
 .info-grid {
     display: grid;
