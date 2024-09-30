@@ -24,6 +24,11 @@ body {
 }
 
 /* Header styling */
+
+h1{
+    font-size: 100%;
+}
+
 header {
     background-color: var(--primary-color);
     padding: 10px;
