@@ -4,7 +4,7 @@
         "address": "Av. Yrigoyen 3725, Comodoro Rivadavia, Chubut",
         "phone": "297-444-1234",
         "website": "http://www.ypf.com",
-        "image": "ypf-logo.png",
+        "image": "../images/ypf-logo.svg",
         "membership_level": 3,
         "description": "Empresa líder en la producción y distribución de combustibles y energía."
     },
@@ -13,7 +13,7 @@
         "address": "San Martín 200, Comodoro Rivadavia, Chubut",
         "phone": "297-445-5678",
         "website": "http://www.bancochubut.com.ar",
-        "image": "banco-chubut-logo.png",
+        "image": "../images/BCH-logo.svg",
         "membership_level": 2,
         "description": "Institución financiera regional con una amplia gama de servicios bancarios."
     },
@@ -21,8 +21,8 @@
         "name": "Petrolera Pampa",
         "address": "Av. Kennedy 4500, Comodoro Rivadavia, Chubut",
         "phone": "297-446-9876",
-        "website": "http://www.petrolerapampa.com",
-        "image": "pampa-logo.png",
+        "website": "https://pampa.com/",
+        "image": "../images/pampa-energia-logo.webp",
         "membership_level": 1,
         "description": "Compañía dedicada a la exploración y producción de hidrocarburos."
     },
@@ -31,7 +31,7 @@
         "address": "Rivadavia 1234, Comodoro Rivadavia, Chubut",
         "phone": "297-447-2345",
         "website": "http://www.laanonima.com.ar",
-        "image": "la-anonima-logo.png",
+        "image": "../images/la-anonima-logo.svg",
         "membership_level": 3,
         "description": "Cadena de supermercados con una gran variedad de productos."
     },
@@ -39,17 +39,17 @@
         "name": "Hotel Austral Plaza",
         "address": "Moreno 725, Comodoro Rivadavia, Chubut",
         "phone": "297-448-6543",
-        "website": "http://www.australplazahotel.com",
-        "image": "austral-plaza-logo.png",
+        "website": "https://www.australhotel.com.ar/",
+        "image": "../images/hotel-autral-logo.svg",
         "membership_level": 2,
         "description": "Hotel de lujo ubicado en el corazón de Comodoro Rivadavia."
     },
     {
-        "name": "Cinemacenter",
-        "address": "Av. Rivadavia 1500, Comodoro Rivadavia, Chubut",
-        "phone": "297-449-7890",
-        "website": "http://www.cinemacenter.com.ar",
-        "image": "cinemacenter-logo.png",
+        "name": "Sudestada SRL",
+        "address": "Av. San Martin 570, Comodoro Rivadavia, Chubut",
+        "phone": "297-408-8302",
+        "website": "https://www.cinecr.com.ar/main.aspx#",
+        "image": "../images/sudestada-logo.jfif",
         "membership_level": 1,
         "description": "Cadena de cines con las últimas películas de estreno."
     },
@@ -57,8 +57,8 @@
         "name": "Transportes Patagonia",
         "address": "Ruta 3 Km 1800, Comodoro Rivadavia, Chubut",
         "phone": "297-450-1122",
-        "website": "http://www.transportespatagonia.com",
-        "image": "transportes-patagonia-logo.png",
+        "website": "https://patagoniaargentinasrl.com/",
+        "image": "../images/patagonia-argentina-transport-logo.png",
         "membership_level": 2,
         "description": "Servicio de transporte y logística en la región patagónica."
     }
