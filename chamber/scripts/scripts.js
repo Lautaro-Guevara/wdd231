@@ -15,7 +15,7 @@ function displayMembers(members, view) {
 
     members.forEach(member => {
         const memberDiv = document.createElement('div');
-        memberDiv.classList.add('member-card', view);
+        memberDiv.classList.add('member-card');
 
         memberDiv.innerHTML = `
             <img src="./images/${member.image}" alt="${member.name} Logo" class="member-logo">
