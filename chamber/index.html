@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Home</title>
+
+    <meta name="description" content="Main page of the chamber of commerce from Comodoro Rivadavia, Argentina belonging to the student Lautaro Guevara.">
+    <meta name="author" content="Lautaro Guevara">
+
+    <meta property="og:url" content="https://lautaro-guevara.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Comodoro Rivadavia Chamber of Commerce" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/e/ed/A%C3%A9rea_Comodoro.jpg" />
+
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/last-update.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/favicon.png" alt="Comodoro Rivadavia Chamber of Commerce Logo">
+                
+            </div>
+            <h1>Comodoro Rivadavia Chamber of Commerce</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+        <img id="hero-image" src="images/hero-image.webp" alt="Scalable, responsive hero image" loading="lazy">
+        <button class="hero-button">Keynote Tickets</button>
+    </section>
+
+        <h2>Home</h2>
+        <div class="info-grid">
+            <section class="events">
+                <h3>Events</h3>
+                <!-- Events content will be displayed here -->
+            </section>
+            <section class="weather">
+                <h3>Current Weather</h3>
+                <p><span id="current-temperature">|</span></p>
+                <p>Partly Cloudy</p>
+                <p>High: 85°</p>
+                <p>Low: 52°</p>
+                <p>Humidity: 34%</p>
+                <p>Sunrise: 7:30am</p>
+                <p>Sunset: 9:59pm</p>
+            </section>
+            <section class="forecast">
+                <h3>Weather Forecast</h3>
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </section>
+        </div>
+
+        <div class="business-list">
+            <div class="view-toggle">
+                <button id="grid-view" class="active-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="members-container" class="grid"></div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <address>
+            <p>Comodoro Rivadavia Chamber of Commerce</p>
+            <p>555 Av. San Martin, Comodoro Rivadavia, Argentina</p>
+            <p>Email: info@Comodoro Rivadaviacc.org</p>
+            <p>Phone: (297) 555-2300</p>
+        </address>
+        <div class="social-icons">
+            <a href="#"><img src="images/youtube-logo.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/x-logo.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedIn-logo.svg" alt="LinkedIn"></a>
+        </div>
+        <p>WDD231 Class Project</p>
+        <p> Lautaro Guevara</p>
+        <p>©<span id="currentyear"></span> Comodoro Rivadavia Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
