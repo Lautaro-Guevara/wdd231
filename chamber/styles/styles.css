@@ -1,7 +1,7 @@
 /* Define color variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --primary-color: #0e629b;
+    --secondary-color: #0E6900;
     --background-color: #ecf0f1;
     --text-color: #333;
     --font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 /* Header styling */
@@ -31,18 +31,13 @@ h1{
 
 header {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 1rem;
     color: #fff;
 }
 
-.logo img {
-    max-width: 50px;
-}
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
+    display: none;
 }
 
 nav ul li {
@@ -55,17 +50,20 @@ nav ul li a {
 }
 
 .menu-toggle {
-    display: none;
+    display: block;
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 1.5rem;
 }
 
+
+/* Hero section styles */
+
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
 #hero-image{
@@ -73,29 +71,39 @@ nav ul li a {
 }
 
 .hero-button {
-    padding: 10px 20px;
+    padding: 1rem;
     background-color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 25px;
+}
+
+
+/* Info grid section (Events, Current Weather and Weather Forecast) styles */
+
+h2{
+    display: flex;
+    justify-content: center;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .events, .weather, .forecast {
     background-color: #fff;
-    padding: 10px;
+    padding: 1rem;
     border: 1px solid #ddd;
 }
 
 /* Business card styling */
 .business-list {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
 }
@@ -107,44 +115,10 @@ nav ul li a {
     width: 100%;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-icons img {
-    max-width: 30px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-    nav ul {
-        display: none;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    .business-list {
-        flex-direction: column;
-    }
-}
-
 
 /* Container styling */
 #members-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -178,9 +152,30 @@ footer {
 }
 
 .grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .list {
     grid-template-columns: 1fr;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 100%;
+    max-width: 30px;
 }

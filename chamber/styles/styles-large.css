@@ -1,0 +1,15 @@
+@media (min-width: 768px){
+
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+
+}
