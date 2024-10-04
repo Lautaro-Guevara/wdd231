@@ -40,12 +40,17 @@ function choseRandomMember(members){
         }
     }
 
-    // for (var n =0; n < 3; n++ ){
-    //     const memberSelected = membersSpotlight[Math.floor(Math.random()*2)+2]
-    //     totalMembersSelected.push(memberSelected)
-    // }
-
     return totalMembersSelected
+}
+
+// Function to translate membership level to text
+function getMembershipLevel(level) {
+    switch (level) {
+        case 1: return 'Member';
+        case 2: return 'Silver';
+        case 3: return 'Gold';
+        default: return 'Unknown';
+    }
 }
 
 function displaySpotlight(member){
@@ -64,7 +69,7 @@ function displaySpotlight(member){
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-            <p>${member.description}</p>
+            <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membership_level)}</p>
         `;
 
         spotlight.appendChild(memberDiv)
