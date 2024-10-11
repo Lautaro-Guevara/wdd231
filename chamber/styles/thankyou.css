@@ -1,0 +1,14 @@
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#confirmation-card{
+    background-color: aliceblue;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    max-width: 75%;
+    border-radius: 16px;
+}

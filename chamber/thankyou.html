@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-large.css">
-    <link rel="stylesheet" href="styles/spotlight.css">
+    <link rel="stylesheet" href="styles/ham-button.css">
+    <link rel="stylesheet" href="styles/ham-button-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Home Page | Comodoro Rivadavia Chamber of Commerce </title>
 
@@ -24,26 +26,31 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
+            <div id="top-view">
+                <div class="logo">
                 <img src="images/favicon.png" alt="Comodoro Rivadavia Chamber of Commerce Logo">
                 
             </div>
             <h1>Comodoro Rivadavia Chamber of Commerce</h1>
-            <nav>
+            <a id="menu" href="#"></a>
+            </div>
+            
+            
+
+            <nav class="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
-                <button class="menu-toggle">&#9776;</button>
             </nav>
         </div>
     </header>
 
     <main>
 
-        <section>
+        <section id="confirmation-card">
             <h2>Your Information:</h2>
             <p><strong>First Name:</strong> <span id="first-name"></span></p>
             <p><strong>Last Name:</strong> <span id="last-name"></span></p>
