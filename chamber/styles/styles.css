@@ -16,12 +16,6 @@ body {
     color: var(--text-color);
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
 
 /* Header styling */
 
@@ -36,26 +30,7 @@ header {
 }
 
 
-nav ul {
-    display: none;
-}
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-toggle {
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-}
 
 
 /* Hero section styles */
