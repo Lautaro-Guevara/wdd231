@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #FF6347;
+    background-color: #ff6347;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -30,11 +30,11 @@ section {
 }
 
 section#color-schema {
-    color: #228B22;
+    color: #4caf50;
 }
 
 section#typography {
-    color: #FF6347;
+    color: #ff6347;
 }
 
 img {
