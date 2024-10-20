@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-large.css">
     <link rel="stylesheet" href="styles/spotlight.css">
+    <link rel="stylesheet" href="styles/ham-button.css">
+    <link rel="stylesheet" href="styles/ham-button-large.css">
+
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Discover | Comodoro Rivadavia Chamber of Commerce </title>
 
@@ -20,36 +23,82 @@
 
     <script src="scripts/last-update.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+
     <script src="scripts/forecast-weather.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
+            <div id="top-view">
+                <div class="logo">
                 <img src="images/favicon.png" alt="Comodoro Rivadavia Chamber of Commerce Logo">
                 
             </div>
             <h1>Comodoro Rivadavia Chamber of Commerce</h1>
             <a id="menu" href="#"></a>
+            </div>
+            
+            
+
             <nav class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                 </ul>
-                
             </nav>
         </div>
     </header>
 
     <main class="discover-layout">
         <aside class="sidebar">
-            <!-- Aquí colocaremos la información adicional, como eventos, estadísticas, etc. -->
+            <div class="visit-message" id="visit-message">
+                <!-- Aquí se mostrará el mensaje basado en la última visita -->
+            </div>
+            <div class="event-info">
+                <h3>Upcoming Events</h3>
+                <img src="images/favicon.png" alt="chamber-logo">
+                <p>Check out our latest events and workshops happening in Timbuktu!</p>
+            </div>
+            <div class="calendar">
+                <h3>Calendar</h3>
+                <div id="calendar"></div>
+            </div>
         </aside>
         <section class="gallery">
-            <!-- Aquí se colocarán las imágenes locales con lazy loading -->
+
+            <figure>
+                <img src="images/ypf-station.webp" data-src="path/to/image1.jpg" alt="Local scenery 1" loading="lazy" class="lazy-image">
+                <figcaption>YPF Gas Station</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/la-anonima-place.webp" data-src="path/to/image2.jpg" alt="Local scenery 2" loading="lazy" class="lazy-image">
+                <figcaption>La Anonima Supermarket</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/austral-plaza-hotel.webp" data-src="path/to/image1.jpg" alt="Local scenery 1" loading="lazy" class="lazy-image">
+                <figcaption>Hotel Austral</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/chubut-bank.webp" data-src="path/to/image2.jpg" alt="Local scenery 2" loading="lazy" class="lazy-image">
+                <figcaption>Chubut Bank</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/cine.webp" data-src="path/to/image1.jpg" alt="Local scenery 1" loading="lazy" class="lazy-image">
+                <figcaption>Sudestada Cinema Room</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/patagonia-argentina-bus.webp" data-src="path/to/image2.jpg" alt="Local scenery 2" loading="lazy" class="lazy-image">
+                <figcaption>Patagonia Argentina Buses</figcaption>
+            </figure>
+
         </section>
     </main>
 

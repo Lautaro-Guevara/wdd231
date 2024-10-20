@@ -17,6 +17,7 @@ body {
 }
 
 
+
 /* Header styling */
 
 h1{
@@ -132,6 +133,96 @@ h2{
 
 .list {
     grid-template-columns: 1fr;
+}
+
+/* Discover Page */
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+}
+
+.sidebar div {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 16px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+
+}
+
+.gallery figure {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    align-items: center;
+}
+
+.gallery figure img {
+    width: 100%;
+}
+
+.gallery figcaption {
+    text-align: center;
+    margin-top: 1rem;
+}	
+
+/* Estilos para el calendario */
+ .calendar {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+} 
+
+.calendar div{
+    padding: 0;
+    margin: 0;
+    border: none;
+    
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#calendar {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    gap: 5px;
+    text-align: center;
+} 
+
+#calendar .day {
+    border: none;
+    padding: 5px;
+    
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    
+}
+
+#calendar .header {
+    padding: 5px;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 0;
+    margin: 0;
 }
 
 
