@@ -23,6 +23,30 @@ document.addEventListener("DOMContentLoaded", function() {
     // Guardar la fecha de la visita actual en localStorage
     localStorage.setItem('lastVisit', currentVisit);
 
+    const lazyImages = document.querySelectorAll('.lazy-image');
+
+    if ('IntersectionObserver' in window) {
+        const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove('lazy-image');
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+
+        lazyImages.forEach(image => {
+            lazyImageObserver.observe(image);
+        });
+    } else {
+        // Fallback for browsers that do not support IntersectionObserver
+        lazyImages.forEach(image => {
+            image.src = image.dataset.src;
+        });
+    }
+
     const calendarElement = document.getElementById('calendar');
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
