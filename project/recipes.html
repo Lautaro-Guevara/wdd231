@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes XXI - List</title>
+    <meta name="description" content="Explore our extensive collection of delicious and easy-to-make recipes. Find the perfect dish for any occasion and elevate your home cooking skills.">
+    <meta name="author" content="Lautaro Guevara">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/recipes.css">
+    <link rel="stylesheet" href="styles/recipes-large.css">
+    <link rel="stylesheet" href="styles/ham-button.css">
+    <link rel="stylesheet" href="styles/ham-button-large.css">
+
+    <link rel="shortcut icon" href="images/logo-icon.ico" type="image/x-icon">
+    
+    <script type="module" src="scripts/recipes.js"></script>
+    <script src="scripts/ham-button.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <img src="images/logo.webp" alt="logo" id="logo">
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about-us.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="top">
+            <h2>Recipes</h2>
+            <div class="search-container"> 
+                <label for="search-bar"></label>      
+                <input type="text" id="search-bar" placeholder="Search recipes...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="recipe-container">
+            <!-- Recipe cards will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>| Lautaro Guevara | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+Add appropriate social media meta data to the pages.
+
+
+
+Use a lazy loading technique to support progressive design and to increase page performance.
+
+Use an HTML form that meets the standards presented in the course.
+
+Display the form data on a form action page.
+
+
+
+-------JAVASCRIPT---------------
+
+
+
+
+
+Fetch JSON data from a remote site using an API.
+
+
+
+
+------PROFESSIONALISM----------
+
+Include a link to the attributions page in the footer if applicable.
+
+No page on the site exceeds 500kB of total data transfer from an empty cache.

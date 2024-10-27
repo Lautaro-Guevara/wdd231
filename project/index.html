@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes XXI - Home</title>
+    <meta name="author" content="Lautaro Guevara">
+    <meta name="description" content="Discover the joy of cooking with our daily recipes! Subscribe now to receive delicious and easy-to-make recipes delivered straight to your inbox.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ham-button.css">
+    <link rel="stylesheet" href="styles/ham-button-large.css">
+
+    <link rel="shortcut icon" href="images/logo-icon.ico" type="image/x-icon">
+
+    <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+    <script src="scripts/ham-button.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo" id="logo">
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about-us.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Recipes for the Functional Adult of the 21st Century</h1>
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Delicious food" class="hero-image">
+            
+            
+        </section>
+
+
+        <div id="recipe-of-the-day">
+            
+        </div>
+
+        <section class="carousel-body">
+            <div class="carousel">
+            <div class="left">
+                <img id="left" src="images/left.svg" alt="left" loading="lazy">
+            </div>
+
+            <div class="carousel-images"> <!-- Item 1 -->
+                <div class="image">
+                    
+                </div>
+
+                <div class="carousel-text">
+                    <h3>Recipe Title</h3>
+                </div>
+            </div>
+            
+
+            <div class="right" id="right">
+                <img src="images/right.svg" alt="right" loading="lazy">
+            </div>
+            </div>
+            <div class="dots"></div>
+            <!-- Agregar más elementos del carrusel según sea necesario -->
+        
+        </section>
+
+        <section class="subscription-container">
+            <h2>Subscribe for Daily Recipes</h2>
+            <form action="form-action.html" id="subscription-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" title="Please enter your first name" autocomplete="given-name" required>
+    
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" title="Please enter your last name" autocomplete="family-name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@example.com" required>
+    
+                <fieldset>
+                    <legend>Preferred Language:</legend>
+                    <label><input type="radio" name="language" value="english" required> English</label>
+                    <label><input type="radio" name="language" value="spanish"> Spanish</label>
+                    <label><input type="radio" name="language" value="portuguese"> Portuguese</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Select the types of recipes you are interested in:</legend>
+                    <label><input type="checkbox" name="recipe-type" value="vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" name="recipe-type" value="meat"> Meat</label>
+                    <label><input type="checkbox" name="recipe-type" value="desserts"> Desserts</label>
+                    <label><input type="checkbox" name="recipe-type" value="quick-easy"> Quick & Easy</label>
+                    <label><input type="checkbox" name="recipe-type" value="international"> International</label>
+                </fieldset>
+    
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>| Lautaro Guevara | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

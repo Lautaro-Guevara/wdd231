@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes XXI - Home</title>
+    <meta name="author" content="Lautaro Guevara">
+    <meta name="description" content="Discover the joy of cooking with our daily recipes! Subscribe now to receive delicious and easy-to-make recipes delivered straight to your inbox.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/ham-button.css">
+    <link rel="stylesheet" href="styles/ham-button-large.css">
+
+    <link rel="shortcut icon" href="images/logo-icon.ico" type="image/x-icon">
+
+    <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+    <script src="scripts/ham-button.js" defer></script>
+    <script src="scripts/form-action.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo" id="logo">
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about-us.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="confirmation-card">
+            <h2>Your Information:</h2>
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Language Selected:</strong> <span id="language"></span></p>
+            <p><strong>Type of Recipes Interested:</strong> <span id="recipes"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="timestamp"></span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>| Lautaro Guevara | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
